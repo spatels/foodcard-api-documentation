@@ -10,8 +10,8 @@ info:
       Satya Patel 
   version: 1.0.0
 servers:
-  - url: https://api.foodcard.patel.us/v1/
-  - url: https://keycloak.foodcard.patel.us/auth/realms/mcs512/protocol/openid-connect
+  - url: https://api.foodcard.caeio.com/v1/
+  - url: https://keycloak.foodcard.caeio.com/auth/realms/mcs512/protocol/openid-connect
 tags:
   - name: authentication
     description: Requesting access token from keycloack
