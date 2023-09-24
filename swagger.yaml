@@ -169,8 +169,6 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/newBalance'
-      security:
-        - foodcardAuth: []
   /reports/alert:
     get:
       tags:
@@ -473,6 +471,14 @@ components:
     refillCard:
       type: object
       properties:
+        studentName:
+          type: string
+          format: string
+          example: Tony Stark
+        studentId:
+          type: integer
+          format: int64
+          example: 10
         foodcardId:
           type: integer
           format: int64
@@ -483,7 +489,9 @@ components:
           example: 19.87
       required:
         [-foodcardId
-        -amount]
+        -amount
+        -studentName
+        -studentId]
     newBalance:
       type: object
       properties:
